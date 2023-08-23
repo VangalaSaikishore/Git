@@ -55,4 +55,4 @@ Access valuable resources to enhance your Git knowledge. Explore official docume
 Feel free to utilize and contribute to this cheat sheet, ensuring that you're equipped with a reliable Git command reference for successful software development and collaboration.
 
 
-# I hope these information provides complete overview of Git tool --- Vangala Saikishore 
+I hope these information provides complete overview of Git tool -- Vangala Saikishore 
