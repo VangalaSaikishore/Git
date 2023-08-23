@@ -1,0 +1,38 @@
+git stash
+  This command create the stash area and adds the modified file to it.
+  
+git stash save "add you comment here"
+    (or)
+
+git stash push -m "add you comment here"
+  This command create the stash area and adds the modified file to it (with your given comments).
+  
+git stash list
+  It list all the files , which is inside the stash. 
+  
+git stash pop
+  This command will restore the latest entry in the stash.
+  
+git stash apply stash@{stash number}
+  This command will restore that particular entry from the stash but it will not remove the entry from stash.
+  
+git stash drop stash@{stash number}
+  This will remove the specific stash item.
+  
+git stash clear
+  This will remove the all stash item from stash.
+  
+git stash --keep-index
+  This command add unstaged files alone to the stash.
+  
+git stash -u
+  This command will add all the modifed file including untracked file to stash.
+  
+git stash --patch
+  This command will add the particular modifed file (as you select) file to stash.
+ 
+git stash branch branchname
+  This command create branch and add all the stash file into it.
+  
+git rebase branchname
+  This command will rebase the feature branch into master branch or to whatever branch you want.

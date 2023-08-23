@@ -1,0 +1,38 @@
+1) apt install git
+  This command to install the git tool in your system.
+  
+2) curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o .git.completion.bash
+   This command is to get the completion script from github.
+   
+3) vi .bash_profile
+   This command to open bash_profile in vi editor.
+   Type this:
+             if [ -f ~/.git-completion.bash ]; then
+             . ~/.git-completion.bash
+      This command automatically initiate the completion script.
+========================================================================================================================================
+configuring user:
+ git config --global user.name "User name"
+ 
+ git config --global user.email "your email"
+ 
+ git config --global core.editor vi
+ 
+ git --config -list
+ 
+ ======================================================================================================================================
+ 
+ git add "file name"
+  This command is to add the file to staging area.
+  
+ git commit -m "your message"
+  This command is to commit the file and its changes , which ever in staging area to the repository -m flag is used to add message with your commit.
+  
+ git status 
+ this command check the current status of the file.
+ 
+ git log
+  this command show the log of all activitys.
+  
+ watch -n 1 tree
+   This command helps to check the rapid changes. -n flag  determines refresh time.

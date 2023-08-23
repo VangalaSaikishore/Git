@@ -1,0 +1,51 @@
+git restore filename
+    This command discard the changes in file in working directory.
+    
+git restore --staged filename
+    This command discard the changes in file in staged area.
+
+git show "commits hash value"
+    This command helps you to check any vesion of file.
+    
+git commit --amend -m "your message"
+    This command replace's the previous commit (ie it wont create new version instead it replaces this commit to previous commit ).
+
+git revert 'commitID'
+    This command rollback the commited file to pevious version of the file.
+    
+git clean -f
+    This command remove the untracked files from repository.
+==========================================================================================================================
+    
+Setuping git to ignore the file:
+    vi .gitignore
+        this command creates and open the .gitignore file, now add name of the files that to be igored.
+        here are few tips
+            filename
+                you can directly specify the filename that to be ignored.
+            *.log
+                you can ignore the file with this particular extentions files. you change the extention according to you.
+                To exclude particular .log extention file from ignoring you can add:
+                    !filename.log
+                    
+            foldername/
+                by specifing the folder name you can ignore all the file inside the folder.
+    Ater specifing the file in .gitignore
+        commit the .gitignore
+            git commit -am "adding git ignore file"
+    now you are ready to go
+    Note: this ignoring will we applicable to specific directory only which has .gitignore
+    
+   To ignore the globly we can do:
+   git config --global core.execluesgfile ~/.gitignore
+            give the exact location of .gitignore file
+=================================================================================================================================
+Untrack a tracked file.
+    modify the file.
+    git rm --cached filename
+    git status
+        it say file is deleted but it is deleting only from git repro not from local repo
+    git commit -am "ignoring the filename from tracking"
+    
+    Now, add that file name in .gitignore 
+ ===============================================================================================================================

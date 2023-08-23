@@ -1,0 +1,40 @@
+git grip text
+  This command find the text and its file which consist of your given text.
+  
+git grip -i text
+  This command will ignore the case sensitives and find the text and its file which consist of your given text.
+  
+git grip -in text
+  This command find the text and its file which consist of your given text and its line number.
+  
+git grip -l text
+  This command find the file which consist of your given text.
+  
+git grip -i text *.txt
+  This command find the text and its file which consist of your given extention and text(Note: this command will note check the sub folders).
+  
+git grip -i text | grep *.txt
+  This command find the text and its file which consist of your given extention and text (Note: this command check all sub folders).
+  
+git grip --count -i "text"
+  This command find the file which consist of your given text and the its text count.
+  
+git grip -e text1 -e text2
+  (OR)
+git grip -E "text1|text2"
+  This command find the text and its file which consist of your given text ( searching two strings at a time) .
+  
+git grip -i banana commitid
+  This command find the text and its file which consist of your given text, In the given commitid.
+    
+git grip -i banana head~21
+  This command find the text and its file which consist of your given text, 21 is the no of commit from head, so it checks 21'st commit.
+
+git grip -i banana commitid commitid
+  This command find the text and its file which consist of your given text, from the two given commitid.
+  
+git grip -i banana branchname
+  This command find the text and its file which consist of your given text, In that particular branch .
+  
+git grip -p text
+  This command find the text,its file and wit more additional information, of your given text.

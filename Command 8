@@ -1,0 +1,28 @@
+git commit -amend
+  This command helps you to change the commit message of latest commit.
+  This command open's a editor where you change the commit message.
+
+git rebase -i HEAD~3
+  This command provides you several options to edit or modify a commit.
+    r (reword ie, edit commit messge).
+    e (edit a committed file, fo the follow the commands.but it meld only when it has previous commit).
+      vi filename (edit the file)
+      git commit --amend
+      git rebase --continue
+    s (squash , this merge multiple commits into one).
+   
+git reset --hard HEAD~1
+  This command reset the commit. This command reset all changes done in that command. 
+  
+git reset --mixed HEAD~1
+  This command reset the commit you mentioned and the commit changes will be moved to modified file state. And also this command move's the staged area file to 
+  modified state.
+  
+git reset --soft HEAD~1
+  This command reset the commit you mentioned and the commit changes will be moved to modified file state.
+
+git push
+  This command push your local repo to github repo.
+  
+git pull
+  This command pull's your github repo to local machine.

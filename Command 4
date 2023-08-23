@@ -1,0 +1,43 @@
+git branch
+  This command list the braches and shows which branch you are in.
+  
+git branch branchname
+  This command create new branch.
+  
+git checkout branchname
+  This command change's your working branches.
+  
+git checkout -b branchname
+  This command is used to create and change your branch in single command.
+  
+git branch -m branchnamee newname
+  This command rename's the branch name.
+  
+git branch --merged
+  This command show's the branchs that are merged with current branch.
+  
+git branch -d branchname
+  This command deletes the branch (This command works only when the branch is merged).
+git branch -D branchname
+  This command deletes the branch ,even if it is not merged.
+  
+git merge branchname
+  This command merge the branches with current working branch.
+  Note: To merger with specific branch, first you should be on that branch(  ie if you want to merge eg_branch with master branch, first you should 
+          checkout the master branch and then you should run this command).
+          
+git log --oneline --all --decorate --graph
+  This command show's the log in a perfect grapical log manner.
+  
+=========================================================================================================
+To setup git prompt script
+This prompt script automatically shows the branch name in terminal.
+ curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh -o ~/.git-prompt.sh
+ 
+ vi .bash_profile
+  update the profile file.
+  
+  if [ -f ~/.git-prompt.sh ]; then
+  source ~/.git-prompt.sh
+  export PS1='[\u@\h \W$(__git_ps1" (%s)")]\$'
+  fi

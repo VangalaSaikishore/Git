@@ -1,0 +1,73 @@
+git tags
+  This command list all the tags.
+  
+git tag -l *name
+  This command filter the tags.
+  
+git tag name
+  This command creates a light weighted tag.
+    
+git tag -a name
+  This command creates a annotated tag.
+  
+git tag -a tagname commitid
+  This command create tag and assign that for specified commitID.
+  
+git tag -d tagname
+  This command delete the tag.
+  
+git config --global alias.s status
+  This alias command create alias for status as s.( You can create alias for any command)
+    (OR)
+ vi ~/.gitconfig 
+  Here you can add alias as much as you want.
+    (OR)
+  alias l1="git log"
+    You can add alias in this way also.
+ =====================================================================================================
+ Commit filtering:
+  git log --oneline -3
+    This command shows last 3 commits.
+    
+ git log --oneline tagname
+  This commad shows you the commits done till that specified tag.
+
+ git log --oneline filename
+  This commad shows you the commits done to that specified file.
+  
+git log --author="authorname"
+  This command shows the commit log done by specified author.
+  
+git log --oneline --grep="message"
+  You can also filter commits by the message.
+
+git log --oneline commitid..head
+  This command filter the log from given commitid to head ( Note: It excludes the given commitid commit).
+  
+git log --oneline commitid..commitid
+  This command filter the log between given two commitid( Note: It excludes the given commitid commit).
+
+Filtering using date:
+
+git log --oneline --after="2022-01-20"
+
+git log --oneline --before="2022-02-7"
+
+git log --oneline --after="2022-01-20" --before="2022-02-7"
+
+
+git log --oneline --since="2022-01-20"
+  This command work same as after.
+  
+Formating:
+  git log --oneline --formate="medium"
+    This is the default formating style
+  
+  git log --oneline --formate="short"
+    This command remove some unwanted data
+  
+  git log --oneline --formate="email"
+    This detailed data of who did that commit.
+    
+  ggit log --oneline --all --decorate --graph
+    This commad show log in more grapical manner.

@@ -1,0 +1,33 @@
+git clone "Github file link"
+   This command is used to download a repository from github.
+   
+git mv filename1 filename2
+    this command is used to change the filename.
+    
+git mv filename1 path/
+    This command is used to move file from one directory to another directory.
+    
+git rm filename1 
+    This command is used to delete a file.
+
+git diff
+    This command is used to check or view the exact changes done to that file.
+    This command show the (diff between working directory file and .git repository file) changes to be staged.
+    
+    
+git diff --staged
+      (or)
+git diff --cached
+    This command compare and shows(used to compare staged file and .git repository file) staged changes to commited changes.
+    
+git commit -am "your message"
+    add & commit in single command.
+    
+git add . --dry-run
+       (or)
+git add --all --dry-run
+        This command add and shows what goes to staging area.
+        
+git add --update --dry-run
+      this command add the file to staging area which are already tracting by git, and ignore the untracted files.
+      
